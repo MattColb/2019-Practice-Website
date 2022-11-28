@@ -1,0 +1,125 @@
+@media print{
+    nav{
+        display: none;
+    }
+    
+    aside li a{
+        display: none;
+    }
+}
+
+@font-face{
+    font-family: Firasans;
+    src: url("FiraSans-UltraLight.OTF")
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    background-color: lightgray;
+    min-width: 500px;
+    font-size: 100%;
+    max-width: 1200px;
+}
+
+/*Navigation Styles*/
+
+nav{
+    text-align: center;
+}
+
+
+nav ul{
+    list-style-type: none;
+}
+
+#currentpage{
+    font-size: 1.5625em;
+    background-color: lightblue;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+    padding: 25px 0;
+}
+
+nav li a{
+    display: block;
+    padding: 25px 0;
+    background-color: lightgreen;
+    font-size: 1.5625em;
+    border-bottom: 3px solid black;
+    text-decoration: none;
+}
+
+/*Section Styles*/
+
+section{
+    float: right;
+    width: 50%;
+}
+
+section p{
+    font-size: 1.125em;
+}
+
+section h2{
+    font-size: 2.1875em;
+    border-bottom: 3px solid black;
+}
+
+/*Aside Styles*/
+
+aside{
+    width: 50%;
+    border-right: 2px solid black;
+}
+
+aside img{
+    float: right;
+}
+
+aside ul{
+    list-style-type: none;
+    font-size: 1.125em;
+}
+aside h3{
+    font-size: 1.5625em;
+}
+
+aside h2{
+    font-size: 2.1875em;
+    border-bottom: 3px solid black;
+}
+
+aside li a:hover{
+    font-weight: 700;
+}
+
+/*Other Styles*/
+
+h2{
+    font-family: Firasans;
+}
+
+object{
+    width: 100%;
+}
+
+#gamesphoto{
+    background-image: url(../images/Hades.jpg);
+    width: 232px;
+    height: 320px;
+}
+
+#gamesphoto:hover{
+    background-image: url(../images/Final_Fantasy_VII_Remake.png);
+    width: 220px;
+    height: 316px;
+    transition: .5s;
+}
